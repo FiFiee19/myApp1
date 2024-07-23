@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'mylist1',
     pathMatch: 'full'
   },
   {
@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'page2',
     loadChildren: () => import('./page2/page2.module').then( m => m.Page2PageModule)
+  },
+  {
+    path: 'mylist1',
+    loadChildren: () => import('./mylist1/mylist1.module').then( m => m.Mylist1PageModule)
   },
 ];
 
